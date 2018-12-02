@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.vt.disposisibandung.views.CustomSwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/swipeRefreshLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ProgressBar
+                android:id="@+id/progressLoading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:indeterminate="true" />
+
+            <RelativeLayout
+                android:id="@+id/cardDisposisi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/bg_card"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:id="@+id/layoutPanelDisposisi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_card_title"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_margin="5dp"
+                        android:src="@drawable/ic_disposisi" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:text="@string/title_disposisi"
+                        android:textColor="@android:color/white"
+                        android:textSize="20sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/messageList"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/layoutPanelDisposisi"
+                    android:orientation="vertical" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/cardKirimDisposisi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/cardDisposisi"
+                android:layout_margin="10dp"
+                android:background="@drawable/bg_card"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:id="@+id/layoutPanelKirimDisposisi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_card_title"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_margin="5dp"
+                        android:src="@drawable/ic_disposisi" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:text="@string/title_kirim_disposisi"
+                        android:textColor="@android:color/white"
+                        android:textSize="20sp" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/emptyKirimDisposisi"
+                    fontPath="@string/typeface_italic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/layoutPanelKirimDisposisi"
+                    android:layout_margin="10dp"
+                    android:text="@string/empty_kirim_disposisi"
+                    android:textColor="@android:color/black"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/emptyKirimDisposisiDone"
+                    fontPath="@string/typeface_italic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/layoutPanelKirimDisposisi"
+                    android:layout_margin="10dp"
+                    android:text="@string/empty_kirim_disposisi_done"
+                    android:textColor="@android:color/black"
+                    android:visibility="gone" />
+
+                <RelativeLayout
+                    android:id="@+id/sectionContainerKirimDisposisi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/layoutPanelKirimDisposisi"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/labelTanggalMasukSurat"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="15dp"
+                        android:text="@string/label_tanggal_masuk_surat" />
+
+                    <TextView
+                        android:id="@+id/textTanggalMasukSurat"
+                        fontPath="@string/typeface_regular"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/labelTanggalMasukSurat"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:textColor="@android:color/black" />
+
+                    <TextView
+                        android:id="@+id/labelPerihalSurat"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/textTanggalMasukSurat"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="15dp"
+                        android:text="@string/label_perihal_surat" />
+
+                    <TextView
+                        android:id="@+id/textPerihalSurat"
+                        fontPath="@string/typeface_regular"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/labelPerihalSurat"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:textColor="@android:color/black" />
+
+                    <TextView
+                        android:id="@+id/labelDisposisiKepada"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/textPerihalSurat"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="15dp"
+                        android:text="@string/label_disposisi_kepada" />
+
+                    <LinearLayout
+                        android:id="@+id/disposisiTargetGroupList"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/labelDisposisiKepada"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:orientation="vertical" />
+
+                    <TextView
+                        android:id="@+id/labelTanggal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/disposisiTargetGroupList"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="15dp"
+                        android:text="@string/label_tanggal_disposisi" />
+
+                    <TextView
+                        android:id="@+id/textTanggal"
+                        fontPath="@string/typeface_regular"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/labelTanggal"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:textColor="@android:color/black" />
+
+                    <TextView
+                        android:id="@+id/labelTemplate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/textTanggal"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="15dp"
+                        android:text="@string/label_template_disposisi" />
+
+                    <RadioGroup
+                        android:id="@+id/radiogroup"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/labelTemplate"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:orientation="vertical" />
+
+                    <TextView
+                        android:id="@+id/labelKeterangan"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/radiogroup"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="15dp"
+                        android:text="@string/label_keterangan_disposisi" />
+
+                    <EditText
+                        android:id="@+id/editKeterangan"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/labelKeterangan"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:background="@drawable/bg_form_field"
+                        android:gravity="top"
+                        android:inputType="textMultiLine"
+                        android:lines="3"
+                        android:padding="5dp" />
+
+                    <Button
+                        android:id="@+id/buttonSubmitDisposisi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_below="@id/editKeterangan"
+                        android:layout_margin="20dp"
+                        android:background="@drawable/bg_form_button"
+                        android:drawableLeft="@drawable/ic_disposisi"
+                        android:drawablePadding="5dp"
+                        android:padding="10dp"
+                        android:text="@string/title_kirim_disposisi"
+                        android:textColor="@android:color/white" />
+
+                    <ProgressBar
+                        android:id="@+id/progressSubmit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@id/buttonSubmitDisposisi"
+                        android:layout_alignLeft="@id/buttonSubmitDisposisi"
+                        android:layout_alignRight="@id/buttonSubmitDisposisi"
+                        android:layout_alignTop="@id/buttonSubmitDisposisi"
+                        android:gravity="center"
+                        android:indeterminate="true"
+                        android:visibility="gone" />
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/cardStatusSurat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/cardKirimDisposisi"
+                android:layout_margin="10dp"
+                android:background="@drawable/bg_card"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:id="@+id/layoutPanelStatus"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_card_title"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_margin="5dp"
+                        android:src="@drawable/ic_info_status" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:text="@string/title_status_surat"
+                        android:textColor="@android:color/white"
+                        android:textSize="20sp" />
+
+                </LinearLayout>
+
+                <CheckBox
+                    android:id="@+id/chkStatus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/layoutPanelStatus"
+                    android:layout_margin="10dp"
+                    android:checked="false"
+                    android:text="@string/label_status_surat" />
+
+                <TextView
+                    android:id="@+id/txtStatus"
+                    fontPath="@string/typeface_italic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/layoutPanelStatus"
+                    android:layout_margin="10dp"
+                    android:text="@string/label_status_surat"
+                    android:textColor="@android:color/black"
+                    android:visibility="gone" />
+
+                <Button
+                    android:id="@+id/buttonSubmitStatus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@id/layoutPanelStatus"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/bg_form_button"
+                    android:padding="10dp"
+                    android:text="@string/label_kirim_status"
+                    android:textColor="@android:color/white" />
+
+                <ProgressBar
+                    android:id="@+id/progressSubmitStatus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@id/buttonSubmitStatus"
+                    android:layout_alignLeft="@id/buttonSubmitStatus"
+                    android:layout_alignRight="@id/buttonSubmitStatus"
+                    android:layout_alignTop="@id/buttonSubmitStatus"
+                    android:gravity="center"
+                    android:indeterminate="true"
+                    android:visibility="gone" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+</com.vt.disposisibandung.views.CustomSwipeRefreshLayout>

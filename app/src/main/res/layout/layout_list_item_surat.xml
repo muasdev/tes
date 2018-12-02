@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/iconSurat"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="3dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/ic_surat_list" />
+
+    <TextView
+        android:id="@+id/badgeNew"
+        android:layout_width="30dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iconSurat"
+        android:layout_marginLeft="15dp"
+        android:background="@drawable/bg_new_badge"
+        android:gravity="center"
+        android:padding="2dp"
+        android:text="@string/badge_new"
+        android:textColor="@android:color/white"
+        android:textSize="8sp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tanggalSurat"
+        fontPath="@string/typeface_light"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:lines="1"
+        android:maxLines="1"
+        android:text="17/09/2017"
+        android:textColor="#ff6b6b6b"
+        android:textSize="14sp" />
+
+    <ImageView
+        android:id="@+id/status_surat"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/tanggalSurat"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/ic_done"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/pengirimSurat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_toLeftOf="@id/tanggalSurat"
+        android:layout_toRightOf="@id/iconSurat"
+        android:ellipsize="end"
+        android:lines="1"
+        android:maxLines="1"
+        android:textColor="@android:color/black"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/perihalSurat"
+        fontPath="@string/typeface_light"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/pengirimSurat"
+        android:layout_below="@id/pengirimSurat"
+        android:layout_marginBottom="8dp"
+        android:layout_toLeftOf="@id/status_surat"
+        android:ellipsize="end"
+        android:lines="2"
+        android:maxLines="2"
+        android:textSize="15sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_below="@id/perihalSurat"
+        android:background="@android:color/darker_gray" />
+
+</RelativeLayout>

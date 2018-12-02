@@ -1,0 +1,554 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/profileLayout"
+            android:layout_width="match_parent"
+            android:layout_height="230dp"
+            android:background="@drawable/header_tonrangeng"
+            android:gravity="bottom"
+            android:padding="20dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profileImageView"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/ic_profile_placeholder"
+                app:civ_border_color="@color/colorPrimaryDark"
+                app:civ_border_width="2dp" />
+
+            <TextView
+                android:id="@+id/profileName"
+                fontPath="@string/typeface_regular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/profileImageView"
+                android:layout_marginTop="10dp"
+                android:ellipsize="marquee"
+                android:lines="1"
+                android:maxLines="1"
+                android:text="Ridwan Ismail"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_big" />
+
+            <TextView
+                android:id="@+id/profileJabatan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/profileName"
+                android:ellipsize="marquee"
+                android:lines="1"
+                android:maxLines="1"
+                android:text="Wali Kota Bandung"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_normal" />
+
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:layout_below="@id/profileLayout"
+            android:background="@color/colorPrimaryDark" />
+
+        <RelativeLayout
+            android:id="@+id/buttonKotakMasuk"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_below="@id/divider"
+            android:padding="10dp">
+
+            <ImageView
+                android:id="@+id/iconKotakMasuk"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/ic_kotak_masuk" />
+
+            <TextView
+                fontPath="@string/typeface_regular"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/iconKotakMasuk"
+                android:text="@string/label_kotak_masuk"
+                android:textColor="#757575"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/newKotakMasuk"
+                fontPath="@string/typeface_regular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/bg_new_badge"
+                android:paddingBottom="2dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="2dp"
+                android:textColor="@android:color/white"
+                android:textSize="12sp"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/menuDivider1"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_below="@id/buttonKotakMasuk"
+            android:background="@android:color/darker_gray"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:id="@+id/buttonSuratUndangan"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_below="@id/buttonKotakMasuk"
+            android:padding="10dp"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/iconSuratUndangan"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/ic_surat_undangan" />
+
+            <TextView
+                fontPath="@string/typeface_regular"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/iconSuratUndangan"
+                android:text="@string/label_surat_undangan"
+                android:textColor="#757575"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/newSuratUndangan"
+                fontPath="@string/typeface_regular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/bg_new_badge"
+                android:paddingBottom="2dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="2dp"
+                android:textColor="@android:color/white"
+                android:textSize="12sp"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/buttonAudiensi"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_below="@id/buttonSuratUndangan"
+            android:padding="10dp"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/iconSuratAudiensi"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/ic_menu_audiensi" />
+
+            <TextView
+                fontPath="@string/typeface_regular"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/iconSuratAudiensi"
+                android:text="@string/label_surat_audiensi"
+                android:textColor="#757575"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/newAudiensi"
+                fontPath="@string/typeface_regular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/bg_new_badge"
+                android:paddingBottom="2dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="2dp"
+                android:textColor="@android:color/white"
+                android:textSize="12sp"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/buttonSuratUmum"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_below="@id/buttonAudiensi"
+            android:padding="10dp"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/iconSuratUmum"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/ic_surat_umum" />
+
+            <TextView
+                fontPath="@string/typeface_regular"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/iconSuratUmum"
+                android:text="@string/label_surat_umum"
+                android:textColor="#757575"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/newSuratUmum"
+                fontPath="@string/typeface_regular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/bg_new_badge"
+                android:paddingBottom="2dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="2dp"
+                android:textColor="@android:color/white"
+                android:textSize="12sp"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/menuDivider2"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_below="@id/buttonSuratUmum"
+            android:background="@android:color/darker_gray" />
+
+        <RelativeLayout
+            android:id="@+id/buttonSuratBelum"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_below="@id/menuDivider2"
+            android:padding="10dp">
+
+            <ImageView
+                android:id="@+id/iconSuratBelum"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/ic_surat_belum" />
+
+            <TextView
+                fontPath="@string/typeface_regular"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/iconSuratBelum"
+                android:text="@string/label_surat_belum"
+                android:textColor="#757575"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/newSuratBelum"
+                fontPath="@string/typeface_regular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/bg_new_badge"
+                android:paddingBottom="2dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="2dp"
+                android:textColor="@android:color/white"
+                android:textSize="12sp"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/buttonSuratSelesai"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_below="@id/buttonSuratBelum"
+            android:padding="10dp">
+
+            <ImageView
+                android:id="@+id/iconSuratSelesai"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/ic_surat_selesai" />
+
+            <TextView
+                fontPath="@string/typeface_regular"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/iconSuratSelesai"
+                android:text="@string/label_surat_selesai"
+                android:textColor="#757575"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/newSuratSelesai"
+                fontPath="@string/typeface_regular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/bg_new_badge"
+                android:paddingBottom="2dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="2dp"
+                android:textColor="@android:color/white"
+                android:textSize="12sp"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/menuDivider3"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_below="@id/buttonSuratSelesai"
+            android:background="@android:color/darker_gray" />
+
+        <RelativeLayout
+            android:id="@+id/buttonSuratKeluar"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_below="@id/menuDivider3"
+            android:padding="10dp">
+
+            <ImageView
+                android:id="@+id/iconSuratKeluar"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/ic_surat_keluar" />
+
+            <TextView
+                fontPath="@string/typeface_regular"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/iconSuratKeluar"
+                android:text="@string/label_surat_keluar"
+                android:textColor="#757575"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/newSuratKeluar"
+                fontPath="@string/typeface_regular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/bg_new_badge"
+                android:paddingBottom="2dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="2dp"
+                android:textColor="@android:color/white"
+                android:textSize="12sp"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/menuDivider4"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_below="@id/buttonSuratKeluar"
+            android:background="@android:color/darker_gray" />
+
+        <RelativeLayout
+            android:id="@+id/buttonDisposisiMasuk"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_below="@id/menuDivider4"
+            android:padding="10dp">
+
+            <ImageView
+                android:id="@+id/iconDisposisiMasuk"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/ic_disposisi_masuk" />
+
+            <TextView
+                fontPath="@string/typeface_regular"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/iconDisposisiMasuk"
+                android:text="@string/label_disposisi_masuk"
+                android:textColor="#757575"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/newDisposisiMasuk"
+                fontPath="@string/typeface_regular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/bg_new_badge"
+                android:paddingBottom="2dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="2dp"
+                android:textColor="@android:color/white"
+                android:textSize="12sp"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/buttonDisposisiKeluar"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_below="@id/buttonDisposisiMasuk"
+            android:padding="10dp">
+
+            <ImageView
+                android:id="@+id/iconDisposisiKeluar"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/ic_disposisi_keluar" />
+
+            <TextView
+                fontPath="@string/typeface_regular"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/iconDisposisiKeluar"
+                android:text="@string/label_disposisi_keluar"
+                android:textColor="#757575"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/newDisposisiKeluar"
+                fontPath="@string/typeface_regular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/bg_new_badge"
+                android:paddingBottom="2dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="2dp"
+                android:textColor="@android:color/white"
+                android:textSize="12sp"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/menuDivider5"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_below="@id/buttonDisposisiKeluar"
+            android:background="@android:color/darker_gray" />
+
+        <RelativeLayout
+            android:id="@+id/buttonArsip"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_below="@id/menuDivider5"
+            android:padding="10dp">
+
+            <ImageView
+                android:id="@+id/iconArsip"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/ic_arsip" />
+
+            <TextView
+                fontPath="@string/typeface_regular"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/iconArsip"
+                android:text="@string/label_arsip"
+                android:textColor="#757575"
+                android:textSize="15sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/buttonJadwal"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_below="@id/buttonArsip"
+            android:padding="10dp">
+
+            <ImageView
+                android:id="@+id/iconJadwal"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/ic_jadwal" />
+
+            <TextView
+                fontPath="@string/typeface_regular"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/iconJadwal"
+                android:text="@string/label_jadwal"
+                android:textColor="#757575"
+                android:textSize="15sp" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</ScrollView>

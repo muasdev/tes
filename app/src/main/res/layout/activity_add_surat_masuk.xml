@@ -1,0 +1,764 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="@bool/fitsSystemWindows">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/status_bar_height"
+            android:background="?colorPrimaryDark" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/status_bar_height">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorPrimary"
+            android:theme="@style/AppTheme.Toolbar" />
+
+        <ScrollView
+            android:id="@+id/scrollView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/toolbar">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusableInTouchMode="true"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/cardDataSurat"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/bg_card">
+
+                    <LinearLayout
+                        android:id="@+id/layoutPanelDataSurat"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_card_title"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_margin="5dp"
+                            android:src="@drawable/ic_data_surat" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:text="@string/title_data_surat"
+                            android:textColor="@android:color/white"
+                            android:textSize="20sp" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/labelTanggalMasukSurat"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/layoutPanelDataSurat"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="15dp"
+                        android:text="@string/label_tanggal_masuk_surat" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@id/labelTanggalMasukSurat"
+                        android:layout_toRightOf="@id/labelTanggalMasukSurat"
+                        android:text="@string/required"
+                        android:textColor="#ff0000" />
+
+                    <EditText
+                        android:id="@+id/editTanggalMasukSurat"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/labelTanggalMasukSurat"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:background="@drawable/bg_form_field"
+                        android:editable="false"
+                        android:focusable="false"
+                        android:padding="5dp" />
+
+                    <TextView
+                        android:id="@+id/labelJenisSurat"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/editTanggalMasukSurat"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="15dp"
+                        android:text="@string/label_jenis_surat" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@id/labelJenisSurat"
+                        android:layout_toRightOf="@id/labelJenisSurat"
+                        android:text="@string/required"
+                        android:textColor="#ff0000" />
+
+                    <Spinner
+                        android:id="@+id/spinnerJenisSurat"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/labelJenisSurat"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:background="@drawable/bg_form_field"
+                        android:padding="5dp" />
+
+                    <TextView
+                        android:id="@+id/labelTanggalSurat"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/spinnerJenisSurat"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="15dp"
+                        android:text="@string/label_tanggal_surat" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@id/labelTanggalSurat"
+                        android:layout_toRightOf="@id/labelTanggalSurat"
+                        android:text="@string/required"
+                        android:textColor="#ff0000" />
+
+                    <EditText
+                        android:id="@+id/editTanggalSurat"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/labelTanggalSurat"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:background="@drawable/bg_form_field"
+                        android:editable="false"
+                        android:focusable="false"
+                        android:padding="5dp" />
+
+                    <TextView
+                        android:id="@+id/labelNomorSurat"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/editTanggalSurat"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="15dp"
+                        android:text="@string/label_nomor_surat" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@id/labelNomorSurat"
+                        android:layout_toRightOf="@id/labelNomorSurat"
+                        android:text="@string/required"
+                        android:textColor="#ff0000" />
+
+                    <EditText
+                        android:id="@+id/editNomorSurat"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/labelNomorSurat"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:background="@drawable/bg_form_field"
+                        android:inputType="text"
+                        android:lines="1"
+                        android:maxLines="1"
+                        android:padding="5dp" />
+
+                    <TextView
+                        android:id="@+id/labelLampiranSurat"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/editNomorSurat"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="15dp"
+                        android:text="@string/label_lampiran_surat" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@id/labelLampiranSurat"
+                        android:layout_toRightOf="@id/labelLampiranSurat"
+                        android:text="@string/required"
+                        android:textColor="#ff0000" />
+
+                    <EditText
+                        android:id="@+id/editLampiranSurat"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/labelLampiranSurat"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:background="@drawable/bg_form_field"
+                        android:inputType="text"
+                        android:lines="1"
+                        android:maxLines="1"
+                        android:padding="5dp" />
+
+                    <TextView
+                        android:id="@+id/labelPerihalSurat"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/editLampiranSurat"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="15dp"
+                        android:text="@string/label_perihal_surat" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@id/labelPerihalSurat"
+                        android:layout_toRightOf="@id/labelPerihalSurat"
+                        android:text="@string/required"
+                        android:textColor="#ff0000" />
+
+                    <EditText
+                        android:id="@+id/editPerihalSurat"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/labelPerihalSurat"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:background="@drawable/bg_form_field"
+                        android:gravity="top"
+                        android:inputType="textMultiLine"
+                        android:lines="3"
+                        android:padding="5dp" />
+
+                    <TextView
+                        android:id="@+id/labelTembusanSurat"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/editPerihalSurat"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="15dp"
+                        android:text="@string/label_tembusan_surat" />
+
+                    <EditText
+                        android:id="@+id/editTembusanSurat"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/labelTembusanSurat"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:background="@drawable/bg_form_field"
+                        android:gravity="top"
+                        android:inputType="textMultiLine"
+                        android:lines="3"
+                        android:padding="5dp" />
+
+                    <TextView
+                        android:id="@+id/labelDitujukan"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/editTembusanSurat"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="15dp"
+                        android:text="@string/label_ditujukan" />
+
+                    <LinearLayout
+                        android:id="@+id/targetList"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/labelDitujukan"
+                        android:layout_marginBottom="20dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:orientation="vertical" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/cardUpload"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/cardDataSurat"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/bg_card">
+
+                    <LinearLayout
+                        android:id="@+id/layoutPanelUpload"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_card_title"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_margin="5dp"
+                            android:src="@drawable/ic_file_surat" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:text="@string/title_upload_surat"
+                            android:textColor="@android:color/white"
+                            android:textSize="20sp" />
+
+                    </LinearLayout>
+
+                    <org.apmem.tools.layouts.FlowLayout
+                        android:id="@+id/photoPreview"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/layoutPanelUpload"
+                        android:layout_margin="15dp"
+                        android:orientation="horizontal" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/cardKegiatan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/cardUpload"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/bg_card">
+
+                    <LinearLayout
+                        android:id="@+id/layoutPanelKegiatan"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_card_title"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_margin="5dp"
+                            android:src="@drawable/ic_data_surat" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:text="@string/title_section_kegiatan"
+                            android:textColor="@android:color/white"
+                            android:textSize="20sp" />
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:layout_alignParentBottom="true"
+                        android:background="@color/surat_panel" />
+
+                    <TextView
+                        android:id="@+id/labelNamaKegiatan"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/layoutPanelKegiatan"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="15dp"
+                        android:text="@string/label_nama_kegiatan" />
+
+                    <EditText
+                        android:id="@+id/editNamaKegiatan"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/labelNamaKegiatan"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:background="@drawable/bg_form_field"
+                        android:gravity="top"
+                        android:inputType="textMultiLine"
+                        android:lines="3"
+                        android:padding="5dp" />
+
+                    <TextView
+                        android:id="@+id/labelWaktuMulaiKegiatan"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/editNamaKegiatan"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="15dp"
+                        android:text="@string/label_waktu_mulai_kegiatan" />
+
+                    <EditText
+                        android:id="@+id/editTanggalMulaiKegiatan"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/labelWaktuMulaiKegiatan"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:background="@drawable/bg_form_field"
+                        android:editable="false"
+                        android:focusable="false"
+                        android:hint="@string/hint_tanggal"
+                        android:padding="5dp" />
+
+                    <EditText
+                        android:id="@+id/editJamMulaiKegiatan"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/editTanggalMulaiKegiatan"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:background="@drawable/bg_form_field"
+                        android:editable="false"
+                        android:focusable="false"
+                        android:hint="@string/hint_jam"
+                        android:padding="5dp" />
+
+                    <TextView
+                        android:id="@+id/labelWaktuSelesaiKegiatan"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/editJamMulaiKegiatan"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="15dp"
+                        android:text="@string/label_waktu_selesai_kegiatan" />
+
+                    <EditText
+                        android:id="@+id/editTanggalSelesaiKegiatan"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/labelWaktuSelesaiKegiatan"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:background="@drawable/bg_form_field"
+                        android:editable="false"
+                        android:focusable="false"
+                        android:hint="@string/hint_tanggal"
+                        android:padding="5dp" />
+
+                    <EditText
+                        android:id="@+id/editJamSelesaiKegiatan"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/editTanggalSelesaiKegiatan"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:background="@drawable/bg_form_field"
+                        android:editable="false"
+                        android:focusable="false"
+                        android:hint="@string/hint_jam"
+                        android:padding="5dp" />
+
+                    <TextView
+                        android:id="@+id/labelTempatKegiatan"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/editJamSelesaiKegiatan"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="15dp"
+                        android:text="@string/label_tempat_kegiatan" />
+
+                    <EditText
+                        android:id="@+id/editTempatKegiatan"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/labelTempatKegiatan"
+                        android:layout_marginBottom="20dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:background="@drawable/bg_form_field"
+                        android:inputType="text"
+                        android:lines="1"
+                        android:maxLines="1"
+                        android:padding="5dp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/cardPengirim"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/cardKegiatan"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/bg_card">
+
+                    <LinearLayout
+                        android:id="@+id/layoutPanelPengirim"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_card_title"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_margin="5dp"
+                            android:src="@drawable/ic_data_surat" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:text="@string/title_section_pengirim"
+                            android:textColor="@android:color/white"
+                            android:textSize="20sp" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/labelNamaPengirim"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/layoutPanelPengirim"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="15dp"
+                        android:text="@string/label_nama_pengirim" />
+
+                    <EditText
+                        android:id="@+id/editNamaPengirim"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/labelNamaPengirim"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:background="@drawable/bg_form_field"
+                        android:inputType="text"
+                        android:lines="1"
+                        android:maxLines="1"
+                        android:padding="5dp" />
+
+                    <TextView
+                        android:id="@+id/labelNoHpPengirim"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/editNamaPengirim"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="15dp"
+                        android:text="@string/label_no_hp_pengirin" />
+
+                    <EditText
+                        android:id="@+id/editNoHpPengirim"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/labelNoHpPengirim"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:background="@drawable/bg_form_field"
+                        android:inputType="phone"
+                        android:lines="1"
+                        android:maxLines="1"
+                        android:padding="5dp" />
+
+                    <TextView
+                        android:id="@+id/labelEmailPengirim"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/editNoHpPengirim"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="15dp"
+                        android:text="@string/label_email_pengirim" />
+
+                    <EditText
+                        android:id="@+id/editEmailPengirim"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/labelEmailPengirim"
+                        android:layout_marginBottom="20dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:background="@drawable/bg_form_field"
+                        android:inputType="textEmailAddress"
+                        android:lines="1"
+                        android:maxLines="1"
+                        android:padding="5dp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/cardDisposisi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/cardPengirim"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/bg_card">
+
+                    <LinearLayout
+                        android:id="@+id/layoutPanelDisposisi"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_card_title"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_margin="5dp"
+                            android:src="@drawable/ic_disposisi" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:text="@string/title_disposisi"
+                            android:textColor="@android:color/white"
+                            android:textSize="20sp" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/labelTanggalDisposisi"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/layoutPanelDisposisi"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="15dp"
+                        android:text="@string/label_tanggal_disposisi" />
+
+                    <TextView
+                        android:id="@+id/textTanggalDisposisi"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/labelTanggalDisposisi"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:textColor="@android:color/black" />
+
+                    <TextView
+                        android:id="@+id/labelPerihalDisposisi"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/textTanggalDisposisi"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="15dp"
+                        android:text="@string/label_perihal_surat" />
+
+                    <TextView
+                        android:id="@+id/textPerihalDisposisi"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/labelPerihalDisposisi"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:textColor="@android:color/black" />
+
+                    <TextView
+                        android:id="@+id/labelNomorDisposisi"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/textPerihalDisposisi"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="15dp"
+                        android:text="@string/label_nomor_disposisi" />
+
+                    <EditText
+                        android:id="@+id/editNomorDisposisi"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/labelNomorDisposisi"
+                        android:layout_marginBottom="20dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:background="@drawable/bg_form_field"
+                        android:inputType="text"
+                        android:lines="1"
+                        android:maxLines="1"
+                        android:padding="5dp" />
+
+                </RelativeLayout>
+
+                <Button
+                    android:id="@+id/buttonSubmitSuratMasuk"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@id/cardDisposisi"
+                    android:layout_margin="20dp"
+                    android:background="@drawable/bg_form_button"
+                    android:drawableLeft="@drawable/ic_disposisi"
+                    android:drawablePadding="5dp"
+                    android:padding="10dp"
+                    android:text="@string/button_simpan_surat"
+                    android:textColor="@android:color/white" />
+
+                <ProgressBar
+                    android:id="@+id/progressSubmit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@id/buttonSubmitSuratMasuk"
+                    android:layout_alignLeft="@id/buttonSubmitSuratMasuk"
+                    android:layout_alignRight="@id/buttonSubmitSuratMasuk"
+                    android:layout_alignTop="@id/buttonSubmitSuratMasuk"
+                    android:gravity="center"
+                    android:indeterminate="true"
+                    android:visibility="gone" />
+
+            </RelativeLayout>
+        </ScrollView>
+    </RelativeLayout>
+</RelativeLayout>

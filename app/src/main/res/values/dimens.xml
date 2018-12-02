@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="button_elevation">2dp</dimen>
+    <dimen name="button_press_elevation">4dp</dimen>
+    <dimen name="shape_size">56dp</dimen>
+
+    <dimen name="width_menu_drawer">320dp</dimen>
+
+    <dimen name="margin_small">5dp</dimen>
+    <dimen name="margin_medium">10dp</dimen>
+    <dimen name="margin_normal">15dp</dimen>
+    <dimen name="margin_big">20dp</dimen>
+
+    <dimen name="text_size_header">32sp</dimen>
+    <dimen name="text_size_subheader">28sp</dimen>
+    <dimen name="text_size_big">22sp</dimen>
+    <dimen name="text_size_normal">19sp</dimen>
+    <dimen name="text_size_medium">17sp</dimen>
+    <dimen name="text_size_medium_small">16sp</dimen>
+    <dimen name="text_size_small">14sp</dimen>
+</resources>

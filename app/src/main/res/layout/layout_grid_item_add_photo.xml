@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="100dp"
+    android:layout_height="100dp"
+    android:padding="3dp">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_margin="5dp"
+        android:background="@android:color/darker_gray" />
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:layout_margin="5dp"
+        android:background="@android:color/darker_gray" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="5dp"
+        android:background="@android:color/darker_gray" />
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_margin="5dp"
+        android:background="@android:color/darker_gray" />
+
+    <Button
+        android:id="@+id/buttonAddPhoto"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/bg_form_button"
+        android:text="@string/button_add_photo"
+        android:textColor="@android:color/white"
+        android:textSize="24sp" />
+
+</RelativeLayout>

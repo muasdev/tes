@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="status_bar_inset">#0000</color>
+    <bool name="fitsSystemWindows">false</bool>
+    <dimen name="navigation_drawer_header_margin">41dp</dimen>
+    <dimen name="status_bar_height">25dp</dimen>
+</resources>

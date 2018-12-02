@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="@bool/fitsSystemWindows">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/status_bar_height"
+            android:background="?colorPrimaryDark" />
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/status_bar_height">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorPrimary"
+            android:theme="@style/AppTheme.Toolbar" />
+
+        <com.astuetz.PagerSlidingTabStrip xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/tabStrip"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_below="@id/toolbar"
+            android:textColor="@color/surat_panel"
+            android:visibility="gone"
+            app:pstsDividerColor="@color/surat_panel"
+            app:pstsIndicatorColor="@color/surat_panel"
+            app:pstsShouldExpand="true"
+            app:pstsUnderlineColor="@color/surat_panel"
+            />
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/tabStrip" />
+
+        <Button
+            android:id="@+id/buttonRetry"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/bg_form_button"
+            android:padding="10dp"
+            android:text="@string/button_retry"
+            android:textColor="@android:color/white"
+            android:textSize="15sp"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+</RelativeLayout>

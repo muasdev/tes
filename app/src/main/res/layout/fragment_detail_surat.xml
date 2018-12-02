@@ -1,0 +1,590 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.vt.disposisibandung.views.CustomSwipeRefreshLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/swipeRefreshLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ProgressBar
+                android:id="@+id/progressLoading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:indeterminate="true" />
+
+            <RelativeLayout
+                android:id="@+id/cardDataSurat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/bg_card"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:id="@+id/layoutPanelDataSurat"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_card_title"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_margin="5dp"
+                        android:src="@drawable/ic_data_surat" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:text="@string/title_data_surat"
+                        android:textColor="@android:color/white"
+                        android:textSize="20sp" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/sectionInfoSurat"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/layoutPanelDataSurat"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="15dp"
+                    android:text="@string/title_section_info_surat"
+                    android:textSize="22sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@id/sectionInfoSurat"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@android:color/darker_gray" />
+
+                <TextView
+                    android:id="@+id/labelTanggalMasukSurat"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/sectionInfoSurat"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="15dp"
+                    android:text="@string/label_tanggal_masuk_surat" />
+
+                <TextView
+                    android:id="@+id/textTanggalMasukSurat"
+                    fontPath="@string/typeface_regular"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/labelTanggalMasukSurat"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:textColor="@android:color/black" />
+
+                <TextView
+                    android:id="@+id/labelJenisSurat"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textTanggalMasukSurat"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/label_jenis_surat" />
+
+                <TextView
+                    android:id="@+id/textJenisSurat"
+                    fontPath="@string/typeface_regular"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/labelJenisSurat"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:textColor="@android:color/black" />
+
+                <TextView
+                    android:id="@+id/labelTanggalSurat"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textJenisSurat"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/label_tanggal_surat" />
+
+                <TextView
+                    android:id="@+id/textTanggalSurat"
+                    fontPath="@string/typeface_regular"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/labelTanggalSurat"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:textColor="@android:color/black" />
+
+                <TextView
+                    android:id="@+id/labelNomorSurat"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textTanggalSurat"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/label_nomor_surat" />
+
+                <TextView
+                    android:id="@+id/textNomorSurat"
+                    fontPath="@string/typeface_regular"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/labelNomorSurat"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:textColor="@android:color/black" />
+
+                <TextView
+                    android:id="@+id/labelLampiranSurat"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textNomorSurat"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/label_lampiran_surat" />
+
+                <TextView
+                    android:id="@+id/textLampiranSurat"
+                    fontPath="@string/typeface_regular"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/labelLampiranSurat"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:textColor="@android:color/black" />
+
+                <TextView
+                    android:id="@+id/labelPerihalSurat"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textLampiranSurat"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/label_perihal_surat" />
+
+                <TextView
+                    android:id="@+id/textPerihalSurat"
+                    fontPath="@string/typeface_regular"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/labelPerihalSurat"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:textColor="@android:color/black" />
+
+                <TextView
+                    android:id="@+id/labelTembusanSurat"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textPerihalSurat"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/label_tembusan_surat" />
+
+                <TextView
+                    android:id="@+id/textTembusanSurat"
+                    fontPath="@string/typeface_regular"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/labelTembusanSurat"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:textColor="@android:color/black" />
+
+                <TextView
+                    android:id="@+id/labelDitujukan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textTembusanSurat"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="15dp"
+                    android:text="@string/label_ditujukan" />
+
+                <TextView
+                    android:id="@+id/textDitujukan"
+                    fontPath="@string/typeface_regular"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/labelDitujukan"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:textColor="@android:color/black" />
+
+                <RelativeLayout
+                    android:id="@+id/sectionContainerKegiatan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textDitujukan"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/sectionKegiatan"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="15dp"
+                        android:text="@string/title_section_kegiatan"
+                        android:textSize="22sp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_below="@id/sectionKegiatan"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@android:color/darker_gray" />
+
+                    <TextView
+                        android:id="@+id/labelNamaKegiatan"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/sectionKegiatan"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="15dp"
+                        android:text="@string/label_nama_kegiatan" />
+
+                    <TextView
+                        android:id="@+id/textNamaKegiatan"
+                        fontPath="@string/typeface_regular"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/labelNamaKegiatan"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:textColor="@android:color/black" />
+
+                    <TextView
+                        android:id="@+id/labelWaktuMulaiKegiatan"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/textNamaKegiatan"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="15dp"
+                        android:text="@string/label_waktu_mulai_kegiatan" />
+
+                    <TextView
+                        android:id="@+id/textWaktuMulaiKegiatan"
+                        fontPath="@string/typeface_regular"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/labelWaktuMulaiKegiatan"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:textColor="@android:color/black" />
+
+                    <TextView
+                        android:id="@+id/labelWaktuSelesaiKegiatan"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/textWaktuMulaiKegiatan"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="15dp"
+                        android:text="@string/label_waktu_selesai_kegiatan" />
+
+                    <TextView
+                        android:id="@+id/textWaktuSelesaiKegiatan"
+                        fontPath="@string/typeface_regular"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/labelWaktuSelesaiKegiatan"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:textColor="@android:color/black" />
+
+                    <TextView
+                        android:id="@+id/labelTempatKegiatan"
+                        fontPath="@string/typeface_regular"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/textWaktuSelesaiKegiatan"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="15dp"
+                        android:text="@string/label_tempat_kegiatan" />
+
+                    <TextView
+                        android:id="@+id/textTempatKegiatan"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/labelTempatKegiatan"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:textColor="@android:color/black" />
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/sectionPengirim"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/sectionContainerKegiatan"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="15dp"
+                    android:text="@string/title_section_pengirim"
+                    android:textSize="22sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@id/sectionPengirim"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@android:color/darker_gray" />
+
+                <TextView
+                    android:id="@+id/labelNamaPengirim"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/sectionPengirim"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="15dp"
+                    android:text="@string/label_nama_pengirim" />
+
+                <TextView
+                    android:id="@+id/textNamaPengirim"
+                    fontPath="@string/typeface_regular"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/labelNamaPengirim"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:textColor="@android:color/black" />
+
+                <TextView
+                    android:id="@+id/labelNoHpPengirim"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textNamaPengirim"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="15dp"
+                    android:text="@string/label_no_hp_pengirin" />
+
+                <TextView
+                    android:id="@+id/textNoHpPengirim"
+                    fontPath="@string/typeface_regular"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/labelNoHpPengirim"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:textColor="@android:color/black" />
+
+                <TextView
+                    android:id="@+id/labelEmailPengirim"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textNoHpPengirim"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="15dp"
+                    android:text="@string/label_email_pengirim" />
+
+                <TextView
+                    android:id="@+id/textEmailPengirim"
+                    fontPath="@string/typeface_regular"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/labelEmailPengirim"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:textColor="@android:color/black" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/cardFileSurat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/cardDataSurat"
+                android:layout_margin="10dp"
+                android:background="@drawable/bg_card"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:id="@+id/layoutPanelFileSurat"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_card_title"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_margin="5dp"
+                        android:src="@drawable/ic_file_surat" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:text="@string/title_file_surat"
+                        android:textColor="@android:color/white"
+                        android:textSize="20sp" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/emptyFile"
+                    fontPath="@string/typeface_italic"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/layoutPanelFileSurat"
+                    android:layout_margin="10dp"
+                    android:text="@string/empty_file_surat"
+                    android:textColor="@android:color/black"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:id="@+id/fileList"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/layoutPanelFileSurat"
+                    android:orientation="vertical"
+                    android:padding="5dp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/cardKomentar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/cardFileSurat"
+                android:layout_margin="10dp"
+                android:background="@drawable/bg_card"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:id="@+id/layoutPanelKomentar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_card_title"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_margin="5dp"
+                        android:src="@drawable/ic_komentar" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:text="@string/title_komentar"
+                        android:textColor="@android:color/white"
+                        android:textSize="20sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/komentarList"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/layoutPanelKomentar"
+                    android:orientation="vertical" />
+
+                <TextView
+                    android:id="@+id/labelBeriKomentar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/komentarList"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="15dp"
+                    android:text="@string/label_beri_komentar" />
+
+                <EditText
+                    android:id="@+id/editKomentar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/labelBeriKomentar"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@drawable/bg_form_field"
+                    android:gravity="top"
+                    android:inputType="textMultiLine"
+                    android:lines="3"
+                    android:padding="5dp" />
+
+                <Button
+                    android:id="@+id/buttonKirimKomentar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@id/editKomentar"
+                    android:layout_margin="20dp"
+                    android:background="@drawable/bg_form_button"
+                    android:drawableLeft="@drawable/ic_disposisi"
+                    android:drawablePadding="5dp"
+                    android:padding="10dp"
+                    android:text="@string/button_kirim_komentar"
+                    android:textColor="@android:color/white" />
+
+                <ProgressBar
+                    android:id="@+id/progressSubmit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@id/buttonKirimKomentar"
+                    android:layout_alignLeft="@id/buttonKirimKomentar"
+                    android:layout_alignRight="@id/buttonKirimKomentar"
+                    android:layout_alignTop="@id/buttonKirimKomentar"
+                    android:gravity="center"
+                    android:indeterminate="true"
+                    android:visibility="gone" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+</com.vt.disposisibandung.views.CustomSwipeRefreshLayout>

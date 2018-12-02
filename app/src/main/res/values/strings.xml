@@ -1,0 +1,105 @@
+<resources>
+    <string name="app_name">Surat Online Parepare</string>
+
+    <string name="typeface_regular">fonts/Roboto-Regular.ttf</string>
+    <string name="typeface_light">fonts/Roboto-Light.ttf</string>
+    <string name="typeface_bold">fonts/Roboto-Bold.ttf</string>
+    <string name="typeface_italic">fonts/Roboto-Italic.ttf</string>
+
+    <string name="title_login">Login</string>
+    <string name="hint_username">Username</string>
+    <string name="hint_password">Password</string>
+    <string name="check_remember">Ingat saya</string>
+    <string name="error_login">Username atau password salah.</string>
+
+    <string name="title_forgot">Lupa Kata Sandi</string>
+    <string name="hint_email">Email</string>
+    <string name="label_kirim">Kirim</string>
+    <string name="label_hint_forgot">Silahkan masukkan alamat email anda untuk mendapatkan kata sandi baru.</string>
+    <string name="label_forgot"><u>Lupa kata sandi?</u></string>
+    <string name="label_back_login"><u>Kembali ke halaman login</u></string>
+    <string name="email_not_found">Maaf, alamat email tidak terdaftar.</string>
+
+    <string name="login_copyright">&#169; 2018 surat online | Modified by E-Gov Team </string>
+
+    <string name="label_kotak_masuk">SURAT MASUK</string>
+    <string name="label_surat_umum">SURAT UMUM</string>
+    <string name="label_surat_undangan">SURAT UNDANGAN</string>
+    <string name="label_surat_keluar">SURAT KELUAR</string>
+    <string name="label_surat_audiensi">AUDIENSI</string>
+    <string name="label_disposisi_masuk">DISPOSISI MASUK</string>
+    <string name="label_disposisi_keluar">DISPOSISI KELUAR</string>
+    <string name="label_surat_belum">SURAT BELUM SELESAI</string>
+    <string name="label_surat_selesai">SURAT SUDAH SELESAI</string>
+    <string name="label_arsip">ARSIP SURAT</string>
+    <string name="label_jadwal">JADWAL</string>
+
+    <string name="action_search">Cari surat</string>
+    <string name="action_logout">Logout</string>
+
+    <string name="text_surat_empty">Tidak ada surat.</string>
+    <string name="badge_new">new</string>
+
+    <string name="title_search_result">HASIL PENCARIAN</string>
+
+    <string name="title_detail_surat">DETAIL SURAT</string>
+    <string name="button_retry">Muat ulang</string>
+
+    <string name="title_data_surat">Data Surat</string>
+    <string name="title_section_info_surat">Info Surat</string>
+    <string name="label_tanggal_masuk_surat">Tanggal masuk surat</string>
+    <string name="label_jenis_surat">Jenis surat</string>
+    <string name="label_tanggal_surat">Tanggal surat</string>
+    <string name="label_nomor_surat">Nomor surat</string>
+    <string name="label_lampiran_surat">Lampiran</string>
+    <string name="label_perihal_surat">Perihal</string>
+    <string name="label_tembusan_surat">Tembusan</string>
+    <string name="title_section_kegiatan">Kegiatan</string>
+    <string name="label_nama_kegiatan">Nama acara</string>
+    <string name="label_waktu_mulai_kegiatan">Waktu acara (mulai)</string>
+    <string name="label_waktu_selesai_kegiatan">Waktu acara (selesai)</string>
+    <string name="label_tempat_kegiatan">Tempat acara</string>
+    <string name="label_ditujukan">Ditujukan kepada</string>
+    <string name="title_section_pengirim">Pengirim</string>
+    <string name="label_nama_pengirim">Nama pengirim</string>
+    <string name="label_no_hp_pengirin">Nomor HP</string>
+    <string name="label_email_pengirim">Email</string>
+
+    <string name="title_file_surat">File Surat</string>
+    <string name="empty_file_surat">Tidak ada file.</string>
+
+    <string name="title_komentar">Laporan</string>
+    <string name="label_tanggal_komentar">Tanggal</string>
+    <string name="label_beri_komentar">Beri laporan</string>
+    <string name="button_kirim_komentar">Kirim Laporan</string>
+
+    <string name="title_disposisi">Disposisi</string>
+    <string name="label_template_disposisi">Pilih template</string>
+    <string name="label_tanggal_disposisi">Tanggal</string>
+    <string name="label_kepada_disposisi">Didisposisikan kepada</string>
+
+    <string name="title_status_surat">Status Surat</string>
+    <string name="label_status_surat">Sudah Selesai Dilaksanakan</string>
+    <string name="label_kirim_status">Kirim</string>
+
+    <string name="title_kirim_disposisi">Kirim Disposisi</string>
+    <string name="title_edit_disposisi">Edit Disposisi</string>
+    <string name="empty_kirim_disposisi">Anda tidak bisa mendisposisikan surat ini.</string>
+    <string name="empty_kirim_disposisi_done">Anda sudah mendisposisikan surat ini.</string>
+    <string name="label_disposisi_kepada">Disposisi kepada</string>
+    <string name="label_keterangan_disposisi">Keterangan</string>
+
+    <string name="button_add_surat_masuk">Surat masuk</string>
+    <string name="button_add_surat_keluar">Surat keluar</string>
+
+    <string name="title_add_surat_masuk">BUAT SURAT MASUK</string>
+    <string name="title_add_surat_keluar">BUAT SURAT KELUAR</string>
+    <string name="required">*</string>
+    <string name="title_upload_surat">Upload Surat</string>
+    <string name="button_add_photo">+</string>
+    <string name="button_delete_photo">X</string>
+    <string name="hint_tanggal">Tanggal</string>
+    <string name="hint_jam">Jam</string>
+    <string name="label_nomor_disposisi">Nomor disposisi</string>
+    <string name="button_simpan_surat">Simpan Surat</string>
+</resources>

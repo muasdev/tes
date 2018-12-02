@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/drawerLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="@bool/fitsSystemWindows">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/status_bar_height"
+            android:background="?colorPrimaryDark" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/status_bar_height">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorPrimary"
+            android:theme="@style/AppTheme.Toolbar" />
+
+        <FrameLayout
+            android:id="@+id/mainFrame"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/toolbar" />
+
+        <com.github.clans.fab.FloatingActionMenu
+            android:id="@+id/addMenu"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/toolbar"
+            android:padding="10dp"
+            app:menu_backgroundColor="#88ffffff"
+            app:menu_buttonSpacing="5dp"
+            app:menu_colorNormal="@color/colorPrimaryDark"
+            app:menu_colorPressed="@android:color/darker_gray"
+            app:menu_labels_margin="3dp"
+            android:visibility="gone"
+            app:menu_labels_showShadow="false"
+            app:menu_labels_textSize="12sp"
+            app:menu_showShadow="false">
+
+            <com.github.clans.fab.FloatingActionButton
+                android:id="@+id/buttonAddSuratKeluar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_add"
+                app:fab_colorNormal="@color/colorPrimary"
+                app:fab_colorPressed="@android:color/darker_gray"
+                app:fab_label="@string/button_add_surat_keluar"
+                app:fab_showShadow="false"
+                app:fab_size="mini" />
+
+            <com.github.clans.fab.FloatingActionButton
+                android:id="@+id/buttonAddSuratMasuk"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_add"
+                app:fab_colorNormal="@color/colorPrimary"
+                app:fab_colorPressed="@android:color/darker_gray"
+                app:fab_label="@string/button_add_surat_masuk"
+                app:fab_showShadow="false"
+                app:fab_size="mini" />
+
+        </com.github.clans.fab.FloatingActionMenu>
+
+    </RelativeLayout>
+
+    <com.vt.disposisibandung.views.ScrimInsetsFrameLayout
+        android:id="@+id/drawerFrame"
+        android:layout_width="300dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="@android:color/white"
+        android:elevation="10dp"
+        android:fitsSystemWindows="@bool/fitsSystemWindows"
+        app:insetForeground="@color/status_bar_inset" />
+
+</android.support.v4.widget.DrawerLayout>
