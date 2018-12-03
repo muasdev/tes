@@ -1,3 +1,334 @@
 <?xml version="1.0" encoding="utf-8"?>
-<items version="2" />
+<items version="2" >
 
+    <item
+        jar="C:\Users\Windows\.gradle\caches\modules-2\files-2.1\com.squareup.picasso\picasso\2.5.2\7446d06ec8d4f7ffcc53f1da37c95f200dcb9387\picasso-2.5.2.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="7446d06ec8d4f7ffcc53f1da37c95f200dcb9387">
+        <dex dex="D:\aplikasi\mobile-surat\app\build\intermediates\pre-dexed\debug\picasso-2.5.2_9fd40ea800b1b90a53a51ab1da916319d6c9fd29.jar" />
+    </item>
+    <item
+        jar="D:\aplikasi\mobile-surat\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\21.0.3\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="4b8945fc23a7461c6fdde15753456d64b0a9358b">
+        <dex dex="D:\aplikasi\mobile-surat\app\build\intermediates\pre-dexed\debug\com.android.support-recyclerview-v7-21.0.3_c87c1043eae2c85d2ec80b3154ffedf1cfc6518f.jar" />
+    </item>
+    <item
+        jar="C:\Users\Windows\.gradle\caches\modules-2\files-2.1\io.realm\realm-annotations\1.1.1\8e720b6ccaa30f4201a3f347f8959f620823e848\realm-annotations-1.1.1.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="8e720b6ccaa30f4201a3f347f8959f620823e848">
+        <dex dex="D:\aplikasi\mobile-surat\app\build\intermediates\pre-dexed\debug\realm-annotations-1.1.1_90d5f823140dfad1d7475b711ec5feb729cc625f.jar" />
+    </item>
+    <item
+        jar="C:\Users\Windows\.gradle\caches\modules-2\files-2.1\com.google.code.gson\gson\2.3.1\ecb6e1f8e4b0e84c4b886c2f14a1500caf309757\gson-2.3.1.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="ecb6e1f8e4b0e84c4b886c2f14a1500caf309757">
+        <dex dex="D:\aplikasi\mobile-surat\app\build\intermediates\pre-dexed\debug\gson-2.3.1_6c859138033036c7d7482e0dba772d92d192f944.jar" />
+    </item>
+    <item
+        jar="D:\aplikasi\mobile-surat\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-games\7.5.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="02bac2dc792d78241077861566f2c82da955e7fa">
+        <dex dex="D:\aplikasi\mobile-surat\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-games-7.5.0_585b39cdfd1372d3967ad9665cec384ba1ba225d.jar" />
+    </item>
+    <item
+        jar="D:\aplikasi\mobile-surat\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-safetynet\7.5.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="1a6411087ab88ce5542f593e63a2752b6b0d6f1a">
+        <dex dex="D:\aplikasi\mobile-surat\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-safetynet-7.5.0_5870c98bfd76ab3ec09adcee1d46ce3f6d78c0ce.jar" />
+    </item>
+    <item
+        jar="D:\aplikasi\mobile-surat\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-fitness\7.5.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="a172852a35ff919e85b9b7f14bbc15c5bee25520">
+        <dex dex="D:\aplikasi\mobile-surat\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-fitness-7.5.0_da1937ad1f0965e033d867d50d5da2c9ccb97a1b.jar" />
+    </item>
+    <item
+        jar="D:\aplikasi\mobile-surat\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\7.5.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="a78183f30e769a98ab4820794f597763088d3065">
+        <dex dex="D:\aplikasi\mobile-surat\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-base-7.5.0_bece0dde3076ca60362f4de9004d8340636bee3f.jar" />
+    </item>
+    <item
+        jar="D:\aplikasi\mobile-surat\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-appindexing\7.5.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="f02127a85abd52a2cd526d4c2409f21969f80ee8">
+        <dex dex="D:\aplikasi\mobile-surat\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-appindexing-7.5.0_2d3aac8216a493ba98768840371e071a02aae87f.jar" />
+    </item>
+    <item
+        jar="D:\aplikasi\mobile-surat\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.2.0\jars\libs\internal_impl-22.2.0.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="57f2ab85c164ff1676ec64dee787981c046fab79">
+        <dex dex="D:\aplikasi\mobile-surat\app\build\intermediates\pre-dexed\debug\internal_impl-22.2.0_d7da1cc76771da7fe73d682c2adcd9bc749ce62a.jar" />
+    </item>
+    <item
+        jar="D:\aplikasi\mobile-surat\app\build\intermediates\exploded-aar\com.crashlytics.sdk.android\crashlytics-core\2.3.10\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="2f9a9b21b70965cde70f6eb8f2ee68794fb482e6">
+        <dex dex="D:\aplikasi\mobile-surat\app\build\intermediates\pre-dexed\debug\com.crashlytics.sdk.android-crashlytics-core-2.3.10_bfb309aa2470f49ea7147111890a2e30b9ea3736.jar" />
+    </item>
+    <item
+        jar="D:\aplikasi\mobile-surat\app\build\intermediates\exploded-aar\com.github.clans\fab\1.5.5\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="aaa2fcc429aaad555dbb17ac914b846ca234a3a5">
+        <dex dex="D:\aplikasi\mobile-surat\app\build\intermediates\pre-dexed\debug\com.github.clans-fab-1.5.5_5e1b44e3f876d19fb3dc589fb786dc2e571c3676.jar" />
+    </item>
+    <item
+        jar="D:\aplikasi\mobile-surat\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\22.2.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="73753982da6bde518f3a4c6b372749981d14d1a0">
+        <dex dex="D:\aplikasi\mobile-surat\app\build\intermediates\pre-dexed\debug\com.android.support-appcompat-v7-22.2.0_d09edb4159b8a96a47f6bb0a80c3cc7b307af6ef.jar" />
+    </item>
+    <item
+        jar="D:\aplikasi\mobile-surat\app\build\intermediates\exploded-aar\com.android.support\mediarouter-v7\22.0.0\jars\libs\internal_impl-22.0.0.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="ba3df4eb0a630d7de294f0e48d3f9267d279b784">
+        <dex dex="D:\aplikasi\mobile-surat\app\build\intermediates\pre-dexed\debug\internal_impl-22.0.0_1c137255e22fcc55aa7f0156c6a5cdcd64e0e4af.jar" />
+    </item>
+    <item
+        jar="D:\aplikasi\mobile-surat\app\build\intermediates\exploded-aar\com.crashlytics.sdk.android\answers\1.3.8\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="0c46a5a897439810b6c437ce188bd07d9d8dffb0">
+        <dex dex="D:\aplikasi\mobile-surat\app\build\intermediates\pre-dexed\debug\com.crashlytics.sdk.android-answers-1.3.8_07d1c2662c7fa4bb839ec38ca88b303c1e48ca7c.jar" />
+    </item>
+    <item
+        jar="D:\aplikasi\mobile-surat\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-wearable\7.5.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="69dd177337ead693c408c8dddc9546bb6f1244fa">
+        <dex dex="D:\aplikasi\mobile-surat\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-wearable-7.5.0_03fc6a679ed42e1c2bb4fb1786bafeef4d13a503.jar" />
+    </item>
+    <item
+        jar="D:\aplikasi\mobile-surat\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-appstate\7.5.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="68c140702c7242d914655bcb3164d9e8c45b84cb">
+        <dex dex="D:\aplikasi\mobile-surat\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-appstate-7.5.0_bf4ce8e6fd24d25cfcf69b855bf9cdceb06a504e.jar" />
+    </item>
+    <item
+        jar="D:\aplikasi\mobile-surat\app\build\intermediates\exploded-aar\com.astuetz\pagerslidingtabstrip\1.0.1\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="7912610ed96381c25c36d986eba422731b9641b6">
+        <dex dex="D:\aplikasi\mobile-surat\app\build\intermediates\pre-dexed\debug\com.astuetz-pagerslidingtabstrip-1.0.1_899c3047d8ffaa5b0d54a3fdffae13272f9d7810.jar" />
+    </item>
+    <item
+        jar="D:\aplikasi\mobile-surat\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-cast\7.5.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="8e3a972f28b8bae817e382257ba177a31bcadbbc">
+        <dex dex="D:\aplikasi\mobile-surat\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-cast-7.5.0_323fca3ac530e918de9918ebeea793c41c598c34.jar" />
+    </item>
+    <item
+        jar="D:\aplikasi\mobile-surat\app\build\intermediates\exploded-aar\com.getkeepsafe.relinker\relinker\1.2.1\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="264f0bc4c0680cfe7a60fea1f12a43f1ab48e7c8">
+        <dex dex="D:\aplikasi\mobile-surat\app\build\intermediates\pre-dexed\debug\com.getkeepsafe.relinker-relinker-1.2.1_647321287858fe549ce841c03e7e92fb8c09b781.jar" />
+    </item>
+    <item
+        jar="C:\Users\Windows\AppData\Local\Android\Sdk\extras\android\m2repository\com\android\support\support-annotations\22.2.0\support-annotations-22.2.0.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="66b42a1f3eb7676070b7ef7f14b603483aecbee1">
+        <dex dex="D:\aplikasi\mobile-surat\app\build\intermediates\pre-dexed\debug\support-annotations-22.2.0_3691adee77374f403cde72ce0fa860e584c8f7c0.jar" />
+    </item>
+    <item
+        jar="D:\aplikasi\mobile-surat\app\build\intermediates\exploded-aar\de.hdodenhof\circleimageview\2.1.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="a2af9c72ccaa4c5c049b500ca6ea664a4ce1f7d4">
+        <dex dex="D:\aplikasi\mobile-surat\app\build\intermediates\pre-dexed\debug\de.hdodenhof-circleimageview-2.1.0_9944e8aab26cbf3e60d6aab83e9232782c67817a.jar" />
+    </item>
+    <item
+        jar="D:\aplikasi\mobile-surat\app\build\intermediates\exploded-aar\com.github.chrisbanes.photoview\library\1.2.3\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="81aa0e8e77d948204aa6754019c6f3c04dd922e3">
+        <dex dex="D:\aplikasi\mobile-surat\app\build\intermediates\pre-dexed\debug\com.github.chrisbanes.photoview-library-1.2.3_6808e1e8cbc3d1b23860ad6aac88ddfa5f8e9178.jar" />
+    </item>
+    <item
+        jar="D:\aplikasi\mobile-surat\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-plus\7.5.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="272bc5d7063f24bc3a33ea1d318cde8f31f5ec4c">
+        <dex dex="D:\aplikasi\mobile-surat\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-plus-7.5.0_182a4d8714cf6b228018a305c9b5c4e109dca3a1.jar" />
+    </item>
+    <item
+        jar="D:\aplikasi\mobile-surat\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-nearby\7.5.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="6440e5e5cfe368f9bff3c537fb8988048069cb33">
+        <dex dex="D:\aplikasi\mobile-surat\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-nearby-7.5.0_e013f9e53bb1ef389a421646e5b78137cb139ea0.jar" />
+    </item>
+    <item
+        jar="D:\aplikasi\mobile-surat\app\build\intermediates\exploded-aar\com.crashlytics.sdk.android\crashlytics\2.6.1\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="99c0128e5e416cf65c7dc8465c1cb1d5fd7c4f92">
+        <dex dex="D:\aplikasi\mobile-surat\app\build\intermediates\pre-dexed\debug\com.crashlytics.sdk.android-crashlytics-2.6.1_3a5e9193a04cfba79cc12c7ba72789eff5150fcf.jar" />
+    </item>
+    <item
+        jar="D:\aplikasi\mobile-surat\app\build\intermediates\exploded-aar\com.crashlytics.sdk.android\beta\1.2.1\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="d2ce88db16786c9c2a839f1839af47a9a96dad17">
+        <dex dex="D:\aplikasi\mobile-surat\app\build\intermediates\pre-dexed\debug\com.crashlytics.sdk.android-beta-1.2.1_377722b1cd3090671e1a14c42259f9933ab74ef8.jar" />
+    </item>
+    <item
+        jar="D:\aplikasi\mobile-surat\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-location\7.5.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="1e98ef3f124bb7a11f8575f9ff5dfea330b61b6f">
+        <dex dex="D:\aplikasi\mobile-surat\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-location-7.5.0_17dab738bc650228c40b7db7646cf64b37e62631.jar" />
+    </item>
+    <item
+        jar="D:\aplikasi\mobile-surat\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.2.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="1ee588ff2c4daf7b97c1cbf922a6c7f027285c2f">
+        <dex dex="D:\aplikasi\mobile-surat\app\build\intermediates\pre-dexed\debug\com.android.support-support-v4-22.2.0_deed92f339e2627bdf50cb51cba1031f244f6f04.jar" />
+    </item>
+    <item
+        jar="D:\aplikasi\mobile-surat\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-panorama\7.5.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="ba207be21987c11b37d9f8faa08ed6e722569f30">
+        <dex dex="D:\aplikasi\mobile-surat\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-panorama-7.5.0_a573b5109d0a5cb75f94644e959378c06f9bc1a3.jar" />
+    </item>
+    <item
+        jar="D:\aplikasi\mobile-surat\app\build\intermediates\exploded-aar\com.malinskiy\superrecyclerview\1.1.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="4649d32a5916687ff5d8e430aacb9a4e4eb10724">
+        <dex dex="D:\aplikasi\mobile-surat\app\build\intermediates\pre-dexed\debug\com.malinskiy-superrecyclerview-1.1.0_8a86f9c0128fcbe2e38b18e55fedb61265d61601.jar" />
+    </item>
+    <item
+        jar="D:\aplikasi\mobile-surat\app\build\intermediates\exploded-aar\io.fabric.sdk.android\fabric\1.3.12\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="3575e73a22dce98f0bdbcdb475ef55a84606a9a6">
+        <dex dex="D:\aplikasi\mobile-surat\app\build\intermediates\pre-dexed\debug\io.fabric.sdk.android-fabric-1.3.12_a4a8ba295cfdba9d0b1a2e03276eb941f7979e4c.jar" />
+    </item>
+    <item
+        jar="D:\aplikasi\mobile-surat\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-wallet\7.5.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="6836d188602ec5382d1967c58b00960eb8ff8773">
+        <dex dex="D:\aplikasi\mobile-surat\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-wallet-7.5.0_c4e83dd1896ddb16ebe09713a61cb39bc886c067.jar" />
+    </item>
+    <item
+        jar="C:\Users\Windows\.gradle\caches\modules-2\files-2.1\org.androidannotations\androidannotations-api\3.3.1\3b8b2740d5f8680a9eac6f6f726925988059fccd\androidannotations-api-3.3.1.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="3b8b2740d5f8680a9eac6f6f726925988059fccd">
+        <dex dex="D:\aplikasi\mobile-surat\app\build\intermediates\pre-dexed\debug\androidannotations-api-3.3.1_6ebba0a4889ef22404312c9964dda0445c143182.jar" />
+    </item>
+    <item
+        jar="D:\aplikasi\mobile-surat\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-analytics\7.5.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="e7b35244f50663b3f8d150714bca9ecd7a290da1">
+        <dex dex="D:\aplikasi\mobile-surat\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-analytics-7.5.0_5bc1d5c6518306f17dc97fd2f315c8a425d06218.jar" />
+    </item>
+    <item
+        jar="D:\aplikasi\mobile-surat\app\build\intermediates\exploded-aar\org.apmem.tools\layouts\1.9\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="c9bc8e0147ebf3a4e9ed2ab792c054fbf5b64177">
+        <dex dex="D:\aplikasi\mobile-surat\app\build\intermediates\pre-dexed\debug\org.apmem.tools-layouts-1.9_aeb3ad6b47e85743761c5b4b2f2300dfc94cd12e.jar" />
+    </item>
+    <item
+        jar="D:\aplikasi\mobile-surat\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-ads\7.5.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="29ebc7e04d877062317c8cc0e68b20f0c1fcda66">
+        <dex dex="D:\aplikasi\mobile-surat\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-ads-7.5.0_367a60b9c1a1ec66a8592b24b8c365d91cd06517.jar" />
+    </item>
+    <item
+        jar="C:\Users\Windows\.gradle\caches\modules-2\files-2.1\com.nineoldandroids\library\2.4.0\e9b63380f3a242dbdbf103a2355ad7e43bad17cb\library-2.4.0.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="e9b63380f3a242dbdbf103a2355ad7e43bad17cb">
+        <dex dex="D:\aplikasi\mobile-surat\app\build\intermediates\pre-dexed\debug\library-2.4.0_b2850cfd65a75b23990f2ac431e55acd19785b5d.jar" />
+    </item>
+    <item
+        jar="D:\aplikasi\mobile-surat\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-gcm\7.5.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="8d736fefa22d896e84a268354b3ed48a42663150">
+        <dex dex="D:\aplikasi\mobile-surat\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-gcm-7.5.0_1b71deebda8796a954c9dffaff2340f8442f0f4c.jar" />
+    </item>
+    <item
+        jar="D:\aplikasi\mobile-surat\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-identity\7.5.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="d405025c600055237c171a0bbabaa49d69696573">
+        <dex dex="D:\aplikasi\mobile-surat\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-identity-7.5.0_9ba115de179a7b7b25dc99984f8b70fbb03096b7.jar" />
+    </item>
+    <item
+        jar="D:\aplikasi\mobile-surat\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-maps\7.5.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="06a42becc33232ec0ee125161da68c1829c9f8fd">
+        <dex dex="D:\aplikasi\mobile-surat\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-maps-7.5.0_d94a7d54c8866e47077b7c242d1af9580f22fe0b.jar" />
+    </item>
+    <item
+        jar="D:\aplikasi\mobile-surat\app\build\intermediates\exploded-aar\uk.co.chrisjenx\calligraphy\2.1.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="e653e15e62e8a59ddd76cc7f827bf8bce38ae7bb">
+        <dex dex="D:\aplikasi\mobile-surat\app\build\intermediates\pre-dexed\debug\uk.co.chrisjenx-calligraphy-2.1.0_c17342b87fc255d1644a60bbb77670034ae5397b.jar" />
+    </item>
+    <item
+        jar="D:\aplikasi\mobile-surat\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-appinvite\7.5.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="63ec6e9f4fe5482a7447d0f3091b8e543a02554c">
+        <dex dex="D:\aplikasi\mobile-surat\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-appinvite-7.5.0_ac501da26be70e0787103ba374da97537e0333ef.jar" />
+    </item>
+    <item
+        jar="D:\aplikasi\mobile-surat\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-drive\7.5.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="f44d03c138cb6488fdbaa65e3a7e5878861a56d8">
+        <dex dex="D:\aplikasi\mobile-surat\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-drive-7.5.0_4a79165e023735153424c6a268e7af076f9da91f.jar" />
+    </item>
+    <item
+        jar="D:\aplikasi\mobile-surat\app\build\intermediates\exploded-aar\io.realm\realm-android-library\1.1.1\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="c82387ef0b47739dc3fe7a92d910ad3f0e7cdf01">
+        <dex dex="D:\aplikasi\mobile-surat\app\build\intermediates\pre-dexed\debug\io.realm-realm-android-library-1.1.1_1412f692565d1036fb159a3d690ba5a4de23752c.jar" />
+    </item>
+    <item
+        jar="D:\aplikasi\mobile-surat\app\build\intermediates\exploded-aar\com.android.support\mediarouter-v7\22.0.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="a1372c17fccacca753d3951d3ad820571cbce075">
+        <dex dex="D:\aplikasi\mobile-surat\app\build\intermediates\pre-dexed\debug\com.android.support-mediarouter-v7-22.0.0_73cb8662a6b8019a584d07089bfa79ce449b0345.jar" />
+    </item>
+    <item
+        jar="C:\Users\Windows\.gradle\caches\modules-2\files-2.1\com.squareup.retrofit\retrofit\1.9.0\a681c044244d9fc375198588297a39ba78028423\retrofit-1.9.0.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="a681c044244d9fc375198588297a39ba78028423">
+        <dex dex="D:\aplikasi\mobile-surat\app\build\intermediates\pre-dexed\debug\retrofit-1.9.0_5205bcade89637dcad0f46ed6757f8ba0aefb8b6.jar" />
+    </item>
+
+</items>
